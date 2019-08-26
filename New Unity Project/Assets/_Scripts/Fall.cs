@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Fall : MonoBehaviour
 {
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider col)
     {
-        Destroy(other.gameObject);
-        Reset.instance.InstantiateBall();
+        GM.instance.LoseLife();
+
     }
 }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5877861654730645922}
   - component: {fileID: 1388898143684321530}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Brick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86,7 +86,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605828239236702743}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 396bce628e408e64facb830f7dc0968e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -104,4 +104,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb976fde80a18c943b91450907c5b41e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brickParticle: {fileID: 0}
+  brickParticle: {fileID: 6290703382557127338, guid: 1fe7f3280dd025f429dae939fbbc1c8c,
+    type: 3}
