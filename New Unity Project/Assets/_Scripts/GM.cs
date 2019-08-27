@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GM : MonoBehaviour
@@ -41,7 +42,7 @@ public class GM : MonoBehaviour
     public void Setup()
     {
         clonePaddle = Instantiate(paddle, transform.position, Quaternion.identity) as GameObject;
-        Instantiate(bricksPrefab, new Vector3(-16,16,0), Quaternion.identity);
+        Instantiate(bricksPrefab, new Vector3(0,0,0), Quaternion.identity);
     }
 
     void CheckGameOver()
@@ -66,7 +67,7 @@ public class GM : MonoBehaviour
     void Reset()
     {
         Time.timeScale = 1f;
-        Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene("One", LoadSceneMode.Single);
     }
 
     public void LoseLife()
