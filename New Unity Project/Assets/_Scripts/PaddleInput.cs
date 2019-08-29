@@ -10,7 +10,7 @@ public class PaddleInput : MonoBehaviour
     void Update()
     {
         MovePaddle(Input.GetAxis("horizontal"));
-        if(Input.GetButtonDown("Esc"))
+        if(Input.GetButtonDown("Cancel"))
         {
             Application.Quit();
         }
